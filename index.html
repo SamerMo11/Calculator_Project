@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calc.css">
+</head>
+
+<body>
+
+    
+    <div class="calculator">
+
+        <input type="text" class="screen" id="screen" placeholder="0">
+
+
+        <button class="symbol" onclick="display.value = '' "><b>AC</b></button>
+        <button class="symbol" onclick="display.value = display.value.toString().slice(0,-1)"><b>DEL</b></button>
+        <button class="symbol" onclick="show('*')"><b>*</b></button>
+        <button class="symbol" onclick="show('/')"><b>/</b></button>
+
+
+        <button class="number" onclick="show('7')"><b>7</b></button>
+        <button class="number" onclick="show('8')"><b>8</b></button>
+        <button class="number" onclick="show('9')"><b>9</b></button>
+        <button class="symbol" onclick="show('+')"><b>+</b></button>
+
+
+        <button class="number" onclick="show('4')"><b>4</b></button>
+        <button class="number" onclick="show('5')"><b>5</b></button>
+        <button class="number" onclick="show('6')"><b>6</b></button>
+        <button class="symbol" onclick="show('-')"><b>-</b></button>
+
+
+        <button class="number" onclick="show('1')"><b>1</b></button>
+        <button class="number" onclick="show('2')"><b>2</b></button>
+        <button class="number" onclick="show('3')"><b>3</b></button>
+        <button class="symbol" onclick="show('.')"><b>.</b></button>
+
+
+        <button class="number" onclick="show('0')"><b>0</b></button>
+        <button class="number" onclick="show('(')"><b>(</b></button>
+        <button class="number" onclick="show(')')"><b>)</b></button>
+        <button class="symbol" onclick="calc('=')"><b>=</b></button>
+        
+
+    </div>
+    <script src="Calc.js"></script>
+
+</body>
+
+</html>
